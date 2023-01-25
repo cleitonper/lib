@@ -6,11 +6,17 @@ import { Button as MuiButton } from '@mui/material';
 
 export const Button: FunctionComponent<PropsWithChildren<ButtonProps>> = ({
   children,
-  color = '#000000',
+  color,
+  ...muiButtonProps
 }) => {
   return (
-    <MuiButton sx={{ color }} variant="contained">
+    <MuiButton sx={{ color }} {...muiButtonProps}>
       {children}
     </MuiButton>
   )
+};
+
+Button.defaultProps = {
+  variant: 'contained',
+  color: '#000000',
 };
