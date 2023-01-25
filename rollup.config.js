@@ -32,6 +32,8 @@ module.exports = [
       "react",
       "react-dom",
       'react/jsx-runtime',
+      '@emotion/react',
+      '@emotion/styled',
       '@mui/material'
     ],
   },
