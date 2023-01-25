@@ -1,4 +1,4 @@
-import { styled } from '@mui/material/styles';
+import { styled } from '@mui/material';
 import { Stack, Typography } from '@mui/material';
 import { Button } from '~/common/components'
 
