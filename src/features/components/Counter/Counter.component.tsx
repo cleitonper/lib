@@ -1,8 +1,7 @@
 import type { FunctionComponent } from 'react'
 
 import { useState } from 'react';
-import { Button } from '~/common/components'
-import { Box, Typography } from '@mui/material'
+import { Container, CounterButton, CounterValue } from './Counter.styles';
 
 export const Counter: FunctionComponent = () => {
   const [count, setCount] = useState(0);
@@ -11,10 +10,10 @@ export const Counter: FunctionComponent = () => {
   const decrement = () => setCount((value) => value - 1);
 
   return (
-    <Box>
-      <Button onClick={increment}>+</Button>
-      <Typography>{count}</Typography>
-      <Button onClick={decrement}>+</Button>
-    </Box>
+    <Container>
+      <CounterButton onClick={decrement}>-</CounterButton>
+      <CounterValue>{count}</CounterValue>
+      <CounterButton onClick={increment}>+</CounterButton>
+    </Container>
   );
 };
