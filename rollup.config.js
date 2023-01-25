@@ -32,6 +32,7 @@ module.exports = [
       "react",
       "react-dom",
       'react/jsx-runtime',
+      '@mui/material'
     ],
   },
 ];
