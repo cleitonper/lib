@@ -15,7 +15,7 @@ Container.defaultProps = {
 
 
 export const CounterButton = styled(Button)(({ theme }) => ({
-  backgroundColor: theme.palette.secondary.main,
+  backgroundColor: theme.palette.counter.primary.main,
   color: theme.palette.common.white,
 }));
 
