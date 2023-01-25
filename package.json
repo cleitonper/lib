@@ -1,15 +1,25 @@
 {
-  "name": "lib",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@package/lib",
+  "repository": "package/lib",
+  "version": "0.0.0",
+  "author": "Cleiton Pereira",
+  "license": "ISC",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start:pages": "next dev",
+    "prebuild:package": "rm -rf build",
+    "postbuild:package": "rm -rf *.tsbuildinfo",
+    "build:package": "rollup -c"
   },
-  "dependencies": {
+  "devDependencies": {
     "@next/font": "13.1.5",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
@@ -18,6 +28,7 @@
     "next": "13.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.4"
+    "rollup": "^3.2.5",
+    "typescript": "^4.9.4"
   }
 }

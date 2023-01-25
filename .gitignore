@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# rollup
+.rollup.cache/
+
 # production
 /build
 

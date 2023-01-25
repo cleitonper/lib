@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "build",
+    "declarationDir": "types",
+
+  },
+  "exclude": [
+    "node_modules",
+    "src/pages"
+  ]
+}
