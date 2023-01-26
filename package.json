@@ -1,7 +1,7 @@
 {
   "name": "@cleitonper/lib",
   "repository": "https://github.com/cleitonper/lib",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Cleiton Pereira",
   "license": "ISC",
   "main": "build/cjs/index.js",
