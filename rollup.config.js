@@ -31,10 +31,12 @@ module.exports = [
     external: [
       "react",
       "react-dom",
+      'react-redux',
       'react/jsx-runtime',
       '@emotion/react',
       '@emotion/styled',
-      '@mui/material'
+      '@mui/material',
+      '@reduxjs/toolkit'
     ],
   },
 ];
